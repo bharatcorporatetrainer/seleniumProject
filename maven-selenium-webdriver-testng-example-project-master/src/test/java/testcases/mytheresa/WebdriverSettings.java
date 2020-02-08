@@ -7,8 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebdriverSettings {
 	
 	public WebDriver driverSettings() {
-		String exePath = "./E2EUserJourney/geckodriver";
-		System.setProperty("webdriver.gecko.driver", exePath);
+		//String exePath = "./E2EUserJourney/geckodriver.exe";
+		System.setProperty("webdriver.gecko.driver", "/var/lib/jenkins/workspace/selenium_project");
 		WebDriver driver = new FirefoxDriver();
 		return driver;
 	}
